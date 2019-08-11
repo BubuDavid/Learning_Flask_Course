@@ -1,0 +1,25 @@
+{% extends 'Base/base.html' %}
+
+{% block tittle %}
+
+Client
+
+{% endblock tittle %}
+
+{% block content %}
+
+	<p>hi!</p>
+
+	{% for name in names%}
+		<ul>
+			<li>{{name}}</li>
+		</ul>
+	{%endfor%}
+
+		{% from "08-macro.html" import list_of_h%}
+
+	{{ list_of_h('Flask Course') }}
+
+	<a href="/.."><button>Back</button></a>
+
+{% endblock%}

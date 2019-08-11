@@ -1,0 +1,21 @@
+<!-- Import the base -->
+{% extends 'Base/base.html'%}
+
+<!-- Tittle -->
+{% block tittle %}
+
+Index
+
+{% endblock tittle %}
+
+<!-- Content -->
+{% block content %}
+
+	{% from "08-macro.html" import list_of_h%}
+
+	{{ list_of_h('Flask Course') }}
+
+
+	<a href="/client"><button>Client</button></a>
+
+{% endblock %}
