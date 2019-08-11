@@ -1,5 +1,3 @@
-#http://127.0.0.1:5000/
-
 from flask import Flask 
 #Importr render:
 from flask import render_template
@@ -15,4 +13,4 @@ def index():
 
 
 if __name__ == '__main__': 
-	app.run(debug = True)
+	app.run(debug = True, port=8000)
