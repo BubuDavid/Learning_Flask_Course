@@ -1,5 +1,3 @@
-#http://127.0.0.1:5000/
-
 from flask import Flask 
 #Importr render:
 from flask import render_template
@@ -18,7 +16,7 @@ def home():
 def user():
 	list_name = ['Bubu', 'Laura', 'Daniel', 'Missalchicha']
 
-	return render_template('07-welcome.html', names = list_name)
+	return render_template('07-client.html', names = list_name)
 
 if __name__ == '__main__': 
 	app.run(debug = True)
