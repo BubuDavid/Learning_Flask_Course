@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 #Todo está en html
 @app.route('/')
-def user():
+def home():
 	name = 'Bubu'
 
 	return render_template('07-welcome.html', name = name)
