@@ -12,7 +12,7 @@ def index():
 
 #Se conectan con hypervincules.
 #Las funciones tienen que ser distintas.
-@app.route('/params')
+@app.route('/params/')
 def params():
 	#Esto es para los URL de tipo:
 	#http://127.0.0.1:8000/params?params1=Bubu
